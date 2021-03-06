@@ -12,12 +12,8 @@ class Import_CSV(models.Model):
     foco_id_old = models.CharField(verbose_name='Foco ID Old', max_length=200)
     foco_id_new = models.CharField(verbose_name='Foco ID New', max_length=200)
     notes = models.TextField(verbose_name='Notes')
-    sample_sent_date = models.TextField(verbose_name='Sample Sent Date')
-    lab_results_date = models.TextField(verbose_name='Lab Results Date')
-
-
-
-
+    sample_sent_date = models.CharField(verbose_name='Sample Sent Date', max_length=10)
+    lab_results_date = models.CharField(verbose_name='Lab Results Date', max_length=10)
 
 
 #lab_id uuid NOT NULL DEFAULT uuid_generate_v4(),
