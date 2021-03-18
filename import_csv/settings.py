@@ -24,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'vv@cllj22+bnk*f=q2xxmvt=1mzpq3=y&ab#4_b%uv5anf7jr1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
+#DEBUG = False
 
 ALLOWED_HOSTS = ['3.14.9.126', '127.0.0.1']
 
@@ -92,8 +93,15 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '',
     }
+#    'postgresql': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'lab_results',
+#        'USER': 'dgav_writer',
+#        'PASSWORD': 'l3ktur4_S0/A',
+#        'HOST': 'localhost',
+#        'PORT': '',
+#    }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -112,6 +120,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+
 
 
 # Internationalization
